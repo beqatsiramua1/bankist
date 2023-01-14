@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.png">
+    <title>Bankist</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__navbar">
+            <div class="welcome">
+                <p class="welcome__message">Log in to get started</p>
+            </div>
+            <div class="logo">
+                <img class="logo-image" src="img/logo.png" alt="logo">
+            </div>
+            <form class="login">
+                <input type="text" class="login__form--input login__form--username" placeholder="user">
+                <input type="text" class="login__form--input login__form--pin" placeholder="PIN">
+                <button class="login__form--btn">&rarr;</button>
+            </form>
+        </nav>
+    </header>
+
+    <main class="main__app">
+        <div class="check__balance">
+            <div class="check__balance--content">
+                <p class="current-balance">Current balance</p>
+                <p class="date">As of <span class="current__date">14/01/2023, 01:15</span></p>
+            </div>
+            <div class="check_balance--amount">
+                <p class="balance-amount">0000€</p>
+            </div>
+        </div>
+
+        <div class="main__app--operations">
+            <div class="main__app--movements"></div>
+            <div class="operation tansfer__money">
+                <h2 class="operation__name">Transfer money</h2>
+                <form class="operation__form">
+                    <input type="text" class="operation__form--input transfer-to-input" placeholder="Transfer to">
+                    <input type="text" class="operation__form--input transfer-amount-input" placeholder="Amount">
+                    <button class="operation__btn transfer-btn">&rarr;</button>
+                </form>
+            </div>
+            <div class="operation request__loan">
+                <h2 class="operation__name">Request loan</h2>
+                <form class="operation__form">
+                    <input type="text" class="operation__form--input request-amount-input" placeholder="Amount">
+                    <button class="operation__btn request-loan-btn">&rarr;</button>
+                </form>
+            </div>
+            <div class="operation close__account">
+                <h2 class="operation__name">Close account</h2>
+                <form class="operation__form">
+                    <input type="text" class="operation__form--input confirm__user--input" placeholder="Confirm user">
+                    <input type="text" class="operation__form--input confirm__pin--input" placeholder="Confirm pin">
+                    <button class="operation__btn close-account-btn">&rarr;</button>
+                </form>
+            </div>
+        </div>
+        <div class="summary">
+            <div class="summary__in">
+                <p class="summary__type">IN <span class="sumamry__in--amount">0000€</span></p>
+            </div>
+            <div class="summary__out">
+                <p class="summary__type">OUT <span class="summary__out--amount">0000€</span></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
